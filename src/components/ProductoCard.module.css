@@ -1,0 +1,45 @@
+.productoCard{
+    list-style: none;
+}
+
+.productoCard a{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+.imagen{
+    height: 175px;
+    min-width: 100%;
+    border-radius: 10px;
+    max-width: 100% !important;
+    object-fit: contain;
+    
+}
+
+.tarjeta{
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+}
+
+.nombre{
+    min-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tarjeta:hover{
+    transform: scale(1.02);
+    transition: transform .4s ease;
+}
+
+.tarjeta:not(:hover){
+    transform: scale(1);
+    transition: all .4s ease;
+}

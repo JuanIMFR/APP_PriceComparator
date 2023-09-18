@@ -1,0 +1,219 @@
+.detailsContainer{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.corazon{
+    cursor: pointer;
+    position: relative;
+    right: -40px;
+    font-size: 20px;
+    
+}
+
+.imagen{
+    height: 175px;
+    max-width: 100% !important;
+}
+
+.contenedorImg{
+    padding-right: 10px;
+}
+
+.contenedorDescrip{
+    max-width: 450px;
+}
+
+@media screen and (max-width: 890px) {
+    .contenedorDescrip{
+        width: 60%;
+    }
+    .corazon{
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .contenedorDescrip{
+        width: 95%;
+    }
+}
+
+.nombre{
+    color: #009fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.descripcion{
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.precioM, .precioA, .precioP, .precioW{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+.precioA .Mprecio{
+    flex: 2;
+}
+
+.Mtitulo, .Mprecio{
+    flex: 1;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.amazonImg{
+    background-image: url(./../assets/img/Amazon_logo.svg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+.mediamarktImg{
+    background-image: url(./../assets/img/pngwing.com.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+.phonehouseImg{
+    background-image: url(./../assets/img/phonehouse.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+.wortenImg{
+    background-image: url(./../assets/img/worten.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+
+.Mprecio{
+    color: #009fff !important;
+    font-weight: 500;
+}
+
+.Murl{
+    width: 120px;
+    border: 1px solid #009fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.Murl2{
+    width: 120px;
+    border: 1px solid #009fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.Murl2 a{
+    color: black;
+    font-size: 1.4rem;
+}
+
+.Murl2:hover{
+    background-color: #009fff;
+    transition: all .5s ease;
+}
+
+.Murl2:hover a{
+    color: white;
+    transition: all .5s ease;
+}
+
+.Murl a{
+    color: black;
+    font-size: 1.4rem;
+}
+
+.Murl:hover{
+    background-color: #009fff;
+    transition: all .5s ease;
+}
+
+.Murl:hover a{
+    color: white;
+    transition: all .5s ease;
+}
+
+.precioW{
+    margin-bottom: 100px;
+}
+
+.productFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .like{
+    color: blue !important;
+} */
+
+.fa-heart:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 890px){
+    .detailsContainer{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 700px){
+    .precioM, .precioA, .precioP, .precioW{
+        width: 300px;
+        height: 70px;
+        flex-direction: column;
+        height: auto;
+    }
+    .amazonImg, .phonehouseImg, .wortenImg, .mediamarktImg{
+        width: 200px;
+    }
+    .Murl2, .Murl, .Mprecio{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .detailsContainer{
+        flex-wrap: wrap;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .precioM, .precioA, .precioP, .precioW{
+        width: 80%;
+    }
+}

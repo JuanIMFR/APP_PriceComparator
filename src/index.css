@@ -1,0 +1,574 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.inicioMensaje{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  color: #009fff;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.imgHeader{
+  background-image: url(./assets/img/pexels-pixabay-4158.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.cuadroAzul{
+  width: 400px;
+  height: 200px;
+  background-color: #009fff;
+  position: relative;
+  top: 350px;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.navi{
+  width: 100%;
+  height: 90px;
+  background-color: #009fff;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer{
+  width: 100%;
+  height: 400px;
+  background-color: #009fff;
+}
+
+@media screen and (min-width: 1700px) {
+  .footer{
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .footer{
+    margin-top: 150px;
+    transform: scale(1.3);
+  }
+}
+
+.frase{
+  color: #009fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 100px;
+  opacity: 60%;
+  font-style: italic;
+}
+
+.fraseProduct{
+  color: #009fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 600;
+}
+
+.flex{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.aviso, .privacidad, .cookies{
+  flex: 1;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.aviso:hover{
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.privacidad:hover{
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.cookies:hover{
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.separador{
+  border-bottom: 1px solid white;
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.createProduct{
+  margin-right: 50px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .createProduct{
+    display: none;
+  }
+}
+
+.navHome{
+  margin-right: 50px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navHome2{
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navHome3{
+  margin-right: 50px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.navHome6{
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+}
+
+
+.createProduct:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.createProduct:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navRegistro2:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.navRegistro2:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navHome:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.navHome:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navHome3:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.navHome3:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navHome6:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.navHome6:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navHome2:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.navHome2:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navRegistro:hover{
+  color: black !important;
+  transition: all .5s ease;
+}
+
+.navRegistro:not(:hover){
+  color: white !important;
+  transition: all .5s ease;
+}
+
+.navRegistro{
+  margin-right: 100px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navRegistro2{
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.avisoLegal{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.titulos{
+  margin-left: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.parrafo{
+  margin-left: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.flex3{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.izqLogo, .derechaNAV{
+  flex: 1;
+}
+
+.derechaNAV{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.logotipo{
+  margin-left: 100px;
+  width: 77px;
+  height: 70px;
+  background-image: url("./assets/img/logo__.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logotipo2{
+  width: 133px;
+  height: 120px;
+  background-image: url("./assets/img/logo__.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.logotipo3{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 175px;
+  height: 160px;
+  background-image: url("./assets/img/logo__.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.nombreEmpresa{
+  color: whitesmoke;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.formRegistro{
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  background-image: url(./assets/img/02.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 1800px) {
+  .formRegistro{
+    width: 40% !important;
+  }
+
+  .formLogin{
+    width: 40% !important;
+  }
+
+  .registroNombre, .registroApellido, .registroEmail, .registroUsuario, .registroContrasenia, .registroTipo{
+    height: 40px !important;
+  }
+
+  .loginUsuario, .loginContrasenia{
+    height: 40px !important;
+  }
+}
+
+.formLogin{
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 50%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  background-image: url(./assets/img/02.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.registroNombre{
+  margin-top: 40px !important;
+}
+
+.registroNombre, .registroApellido, .registroEmail, .registroUsuario, .registroContrasenia, .registroTipo{
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 80%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+}
+
+.registroImagen{
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.loginUsuario{
+  margin-top: 40px !important;
+}
+
+.loginUsuario, .loginContrasenia{
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 80%;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+}
+
+.tituloRegistro{
+  margin: 0 auto;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.registroNombre::placeholder, .registroApellido::placeholder, .registroEmail::placeholder, .registroUsuario::placeholder, .registroContrasenia::placeholder{
+  font-size: 1rem;
+}
+
+.registroBtn{
+  margin: 0 auto;
+  width: 90px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.registroBtn:hover{
+  background-color: black;
+  color: white;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .formRegistro{
+    width: 80%;
+  }
+
+  .formLogin{
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navRegistro{
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flex{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .aviso, .privacidad, .cookies{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .logotipo3{
+    width: 155px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .frase{
+    font-size: 1.5rem;
+  }
+
+  .tituloRegistro{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cuadroAzul{
+    width: 300px;
+    height: 150px;
+    top: 400px;
+  }
+
+  .fraseProduct{
+    font-size: 1.5rem;
+  }
+
+  .logotipo2{
+    display: none;
+  }
+
+  .nombreEmpresa{
+    font-style: italic;
+  }
+
+  .logotipo{
+    margin-left: 50px;
+  }
+
+  .formRegistro{
+    width: 95%;
+  }
+
+  .formLogin{
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .navHome{
+    margin-right: 30px;
+    font-size: 1rem;
+  }
+
+  .navHome3{
+    margin-right: 30px;
+    font-size: 1rem;
+  }
+
+  .navRegistro{
+    margin-right: 30px;
+    font-size: 1rem;
+  }
+
+  .logotipo3{
+    position: relative;
+    left: -20px;
+  }
+
+  .logotipo{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .tituloRegistro{
+    font-size: 1.2rem;
+  }
+
+  .registroNombre, .registroApellido, .registroEmail, .registroUsuario, .registroContrasenia, .registroTipo{
+    width: 90%;
+  }
+}
